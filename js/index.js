@@ -24,7 +24,7 @@ const API_KEY = 'RDChX80FQ4OM9IpYoXmcOQ';
 const API_SECRET = 'zLlCNhTTHw9CBigo5DMcb9n39tBWcP6Fsf7c';
 
 
-const socket = io('http://grannyapi.herokuapp.com');
+const socket = io('https://grannyapi.herokuapp.com/');
 console.log("on est la gros");
 socket.on('connect', function(){});
 socket.on('meetingStart', function(data){
