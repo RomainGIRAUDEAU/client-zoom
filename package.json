@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=development && set BABEL_ENV=development && webpack-dev-server --config webpack.config.dev.js --https false --open http://localhost:9999/index.html --watch",
+    "start": "set NODE_ENV=development && set BABEL_ENV=development && webpack-dev-server --config webpack.config.dev.js --https false",
     "https": "set NODE_ENV=development && set BABEL_ENV=development && webpack-dev-server --config webpack.config.dev.js --https true --open https://localhost:9999/index.html --watch"
   },
   "keywords": [
@@ -19,6 +19,7 @@
   "author": "Jack Yang",
   "license": "ISC",
   "dependencies": {
+    "socket.io-client": "^2.3.0",
     "@zoomus/websdk": "^1.7.5",
     "jquery": "^3.4.1",
     "lodash": "^4.17.14",
@@ -26,9 +27,7 @@
     "react-dom": "16.8.6",
     "react-redux": "7.1.0",
     "redux": "3.7.2",
-    "redux-thunk": "2.2.0"
-  },
-  "devDependencies": {
+    "redux-thunk": "2.2.0",
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
@@ -50,5 +49,8 @@
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
+  },
+  "devDependencies": {
+
   }
 }
