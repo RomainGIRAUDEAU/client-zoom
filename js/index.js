@@ -62,13 +62,19 @@ document.getElementById('join_meeting').addEventListener('click', (e) => {
                     ZoomMtg.join(
                         {
                             meetingNumber: meetConfig.meetingNumber,
-                            userName: meetConfig.userName,
+                            userName: 'EHPAD' ,
                             signature: res.result,
                             apiKey: meetConfig.apiKey,
                             passWord: meetConfig.passWord,
                             success() {
                                 $('#nav-tool').hide();
                                 console.log('join meeting success');
+                                setTimeout(function(){
+                                    document.querySelector("#pc-join").click();
+                                    document.querySelector("#wc-footer-left > div:nth-child(2) > button").click();
+                                }, 5000);
+
+
                             },
                             error(res) {
                                 console.log(res);
