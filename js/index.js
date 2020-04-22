@@ -72,7 +72,7 @@ document.getElementById('join_meeting').addEventListener('click', (e) => {
                                 setTimeout(function(){
                                     document.querySelector("#pc-join").click();
                                     document.querySelector("#wc-footer-left > div:nth-child(2) > button").click();
-                                }, 5000);
+                                }, 3000);
 
 
                             },
